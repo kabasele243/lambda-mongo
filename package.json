@@ -4,6 +4,9 @@
   "description": "Lambda with Mongo DB",
   "author": "Franck Kabasele",
   "license": "MIT",
+  "scripts": {
+    "locally": "node -e \"console.log(require('./src/handlers/index').handler(require('./event.json')));\""
+  },
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
@@ -16,6 +19,8 @@
   },
   "dependencies": {
     "aws-sdk": "^2.639.0",
-    "faker": "^6.6.6"
+    "casual": "^1.6.2",
+    "faker": "^6.6.6",
+    "mongodb": "^4.3.0"
   }
 }
